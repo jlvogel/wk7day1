@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Header from "./components/Header";
+import Player from "./components/Player";
 import './App.css';
 
 function App() {
@@ -19,8 +21,32 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <div>
+      <Header />
 
-    <h1> React Tac Toe</h1>
+      {/* This is a comment in React */}
+
+      {/*
+      A Sneak Peak of a Lesson in the Near Future
+
+      We know we have a player X and a player O, and we want to be able to customize our components. We can pass custom properties to our Player components, using props (short for properties). props is a special term in React. Let's see it in action.
+
+      Let's make a custom prop called which Player and pass the appropriate player name
+      */}
+
+      <Player whichPlayer='x'/>   {/* so is this a prop? */}
+      <Player whichPlayer='o'/>
+
+      {/*
+      Now, we need to access these properties inside our Player component. Our player component is a child of App, and thus has access to props.  Don't worry if this doesn't make sense yet. We'll be returning to this concept over and over again and it'll start to come together.
+      */}
+
+      {/*
+      NTS:
+      I think I remember from previous learning on history of react that that classes used to be used and it helps understand some of the lingo.  Maybe...  I'm glad they're saying don't worry if it doesn't completely make sense yet
+      */}
+
+    </div>
   );
 }
 
